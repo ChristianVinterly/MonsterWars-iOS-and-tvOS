@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="499-42-d0g">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Game ViewTV Controller-->
+        <scene sceneID="dEh-eV-dlg">
+            <objects>
+                <viewController id="499-42-d0g" customClass="GameViewTVController" customModule="MonsterWarsTVOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TiC-Vw-u93"/>
+                        <viewControllerLayoutGuide type="bottom" id="3TX-uQ-fmp"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="weF-Pa-zaM" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFb-wp-d0z" customClass="FocusButton" customModule="MonsterWarsTVOS" customModuleProvider="target">
+                                <rect key="frame" x="535" y="940" width="250" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="1rx-vo-6yL"/>
+                                    <constraint firstAttribute="height" constant="100" id="by8-1Q-EwC"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="10" image="quirk1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="quirkButtonTapped:" destination="499-42-d0g" eventType="primaryActionTriggered" id="wU4-gz-qfi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U51-Wy-TqQ" customClass="FocusButton" customModule="MonsterWarsTVOS" customModuleProvider="target">
+                                <rect key="frame" x="835" y="940" width="250" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="JQI-ph-1qU"/>
+                                    <constraint firstAttribute="width" constant="250" id="tvt-ly-QyR"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="25" image="zap1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="zapButtonTapped:" destination="499-42-d0g" eventType="primaryActionTriggered" id="Jbl-zF-PHG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOI-00-QWd" customClass="FocusButton" customModule="MonsterWarsTVOS" customModuleProvider="target">
+                                <rect key="frame" x="1135" y="940" width="250" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="DVD-03-cSJ"/>
+                                    <constraint firstAttribute="height" constant="100" id="eHr-nl-XrI"/>
+                                    <constraint firstAttribute="width" constant="250" id="w2N-Ig-wcF"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="50" image="munch1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="munchButtonTapped:" destination="499-42-d0g" eventType="primaryActionTriggered" id="ri4-9Y-eIl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="U51-Wy-TqQ" firstAttribute="centerY" secondItem="VFb-wp-d0z" secondAttribute="centerY" id="4Yw-cm-3u7"/>
+                            <constraint firstItem="HOI-00-QWd" firstAttribute="leading" secondItem="U51-Wy-TqQ" secondAttribute="trailing" constant="50" id="DdJ-ME-7m4"/>
+                            <constraint firstItem="HOI-00-QWd" firstAttribute="centerY" secondItem="U51-Wy-TqQ" secondAttribute="centerY" id="UpC-F6-2Bd"/>
+                            <constraint firstItem="U51-Wy-TqQ" firstAttribute="centerX" secondItem="weF-Pa-zaM" secondAttribute="centerX" id="V7q-7I-Bv7"/>
+                            <constraint firstItem="3TX-uQ-fmp" firstAttribute="top" secondItem="U51-Wy-TqQ" secondAttribute="bottom" constant="40" id="iHD-YX-O0N"/>
+                            <constraint firstItem="U51-Wy-TqQ" firstAttribute="leading" secondItem="VFb-wp-d0z" secondAttribute="trailing" constant="50" id="try-y3-J0B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="munchButton" destination="HOI-00-QWd" id="KMJ-w7-fgJ"/>
+                        <outlet property="quirkButton" destination="VFb-wp-d0z" id="Wes-zO-OMD"/>
+                        <outlet property="zapButton" destination="U51-Wy-TqQ" id="jcX-CY-tSj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFW-Nd-Df7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="694"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="munch1" width="60" height="60"/>
+        <image name="quirk1" width="40" height="40"/>
+        <image name="zap1" width="50" height="50"/>
+    </resources>
+</document>

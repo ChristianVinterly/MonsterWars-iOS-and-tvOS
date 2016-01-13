@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="MonsterWars" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqa-pW-MdN">
+                                <rect key="frame" x="80" y="520" width="120" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1Qr-gb-Iqa"/>
+                                    <constraint firstAttribute="width" constant="160" id="7NW-PQ-tjA"/>
+                                </constraints>
+                                <state key="normal" title="10" image="quirk1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1Qr-gb-Iqa"/>
+                                        <exclude reference="7NW-PQ-tjA"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="quirkButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="JFw-aA-WV9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9v-bb-97k">
+                                <rect key="frame" x="240" y="520" width="120" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="TGQ-qH-Ev2"/>
+                                    <constraint firstAttribute="width" constant="160" id="iE0-aD-SjY"/>
+                                </constraints>
+                                <state key="normal" title="25" image="zap1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="TGQ-qH-Ev2"/>
+                                        <exclude reference="iE0-aD-SjY"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="zapButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Hc3-bB-Dsi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfS-rW-nnk">
+                                <rect key="frame" x="400" y="520" width="120" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1Pl-RV-iAt"/>
+                                    <constraint firstAttribute="width" constant="120" id="ZLh-re-UtJ"/>
+                                </constraints>
+                                <state key="normal" title="50" image="munch1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="munchButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="1J6-AC-QKk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CfS-rW-nnk" firstAttribute="height" secondItem="Bqa-pW-MdN" secondAttribute="height" id="0Mg-hZ-CNA"/>
+                            <constraint firstItem="e9v-bb-97k" firstAttribute="width" secondItem="Bqa-pW-MdN" secondAttribute="width" id="3iv-zG-qKH"/>
+                            <constraint firstItem="e9v-bb-97k" firstAttribute="leading" secondItem="Bqa-pW-MdN" secondAttribute="trailing" constant="40" id="5P4-WI-yk7"/>
+                            <constraint firstItem="e9v-bb-97k" firstAttribute="height" secondItem="Bqa-pW-MdN" secondAttribute="height" id="IaS-lF-41n"/>
+                            <constraint firstItem="e9v-bb-97k" firstAttribute="centerY" secondItem="Bqa-pW-MdN" secondAttribute="centerY" id="NgR-0b-RQj"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="e9v-bb-97k" secondAttribute="bottom" constant="20" id="S1h-oq-NYN"/>
+                            <constraint firstItem="e9v-bb-97k" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="Vpb-oM-pvZ"/>
+                            <constraint firstItem="CfS-rW-nnk" firstAttribute="leading" secondItem="e9v-bb-97k" secondAttribute="trailing" constant="40" id="d34-oB-dOn"/>
+                            <constraint firstItem="CfS-rW-nnk" firstAttribute="width" secondItem="Bqa-pW-MdN" secondAttribute="width" id="ogH-73-DJa"/>
+                            <constraint firstItem="CfS-rW-nnk" firstAttribute="centerY" secondItem="e9v-bb-97k" secondAttribute="centerY" id="yG9-Ke-REr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="munchButton" destination="CfS-rW-nnk" id="QgE-xA-0Hh"/>
+                        <outlet property="quirkButton" destination="Bqa-pW-MdN" id="S2u-2O-L6t"/>
+                        <outlet property="zapButton" destination="e9v-bb-97k" id="D8z-i7-rlF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="munch1" width="60" height="60"/>
+        <image name="quirk1" width="40" height="40"/>
+        <image name="zap1" width="50" height="50"/>
+    </resources>
+</document>
