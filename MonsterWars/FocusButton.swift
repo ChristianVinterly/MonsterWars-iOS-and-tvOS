@@ -11,13 +11,25 @@ import UIKit
 
 class FocusButton: UIButton {
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor.blackColor().CGColor
+        self.layer.cornerRadius = 10
+    }
+}
+
+#if os(tvOS)
+extension FocusButton {
+    
     override func canBecomeFocused() -> Bool {
         return true
     }
     
     override func didUpdateFocusInContext(context: UIFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
         super.didUpdateFocusInContext(context, withAnimationCoordinator: coordinator)
-
+        
         if (context.nextFocusedView == self){
             
             coordinator.addCoordinatedAnimations({
@@ -36,3 +48,4 @@ class FocusButton: UIButton {
         }
     }
 }
+#endif

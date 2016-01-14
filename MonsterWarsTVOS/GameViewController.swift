@@ -9,7 +9,7 @@
 import UIKit
 import SpriteKit
 
-class GameViewTVController: UIViewController {
+class GameViewController: UIViewController {
     
     @IBOutlet weak var quirkButton: FocusButton!
     @IBOutlet weak var zapButton: FocusButton!
@@ -19,10 +19,6 @@ class GameViewTVController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        styleButton(quirkButton)
-        styleButton(zapButton)
-        styleButton(munchButton)
         
         let aspectRatio = view.bounds.size.width / view.bounds.size.height
         
@@ -34,12 +30,6 @@ class GameViewTVController: UIViewController {
         skView.ignoresSiblingOrder = true
         self.scene.scaleMode = .AspectFill
         skView.presentScene(self.scene)
-    }
-    
-    func styleButton(button: UIButton) {
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.blackColor().CGColor
-        button.layer.cornerRadius = 10
     }
 
     @IBAction func quirkButtonTapped(sender: AnyObject) {

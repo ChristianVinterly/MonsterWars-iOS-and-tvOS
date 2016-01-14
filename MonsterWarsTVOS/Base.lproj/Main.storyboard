@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Game ViewTV Controller-->
+        <!--Game View Controller-->
         <scene sceneID="dEh-eV-dlg">
             <objects>
-                <viewController id="499-42-d0g" customClass="GameViewTVController" customModule="MonsterWarsTVOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="499-42-d0g" customClass="GameViewController" customModule="MonsterWarsTVOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TiC-Vw-u93"/>
                         <viewControllerLayoutGuide type="bottom" id="3TX-uQ-fmp"/>
@@ -28,7 +28,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="quirkButtonTapped:" destination="499-42-d0g" eventType="primaryActionTriggered" id="wU4-gz-qfi"/>
+                                    <action selector="quirkButtonTapped:" destination="499-42-d0g" eventType="primaryActionTriggered" id="QwC-ni-heX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U51-Wy-TqQ" customClass="FocusButton" customModule="MonsterWarsTVOS" customModuleProvider="target">
@@ -43,7 +43,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="zapButtonTapped:" destination="499-42-d0g" eventType="primaryActionTriggered" id="Jbl-zF-PHG"/>
+                                    <action selector="zapButtonTapped:" destination="499-42-d0g" eventType="primaryActionTriggered" id="mDK-7M-c97"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOI-00-QWd" customClass="FocusButton" customModule="MonsterWarsTVOS" customModuleProvider="target">
@@ -59,7 +59,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="munchButtonTapped:" destination="499-42-d0g" eventType="primaryActionTriggered" id="ri4-9Y-eIl"/>
+                                    <action selector="munchButtonTapped:" destination="499-42-d0g" eventType="primaryActionTriggered" id="h1H-0U-Qiu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,9 +73,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="munchButton" destination="HOI-00-QWd" id="KMJ-w7-fgJ"/>
-                        <outlet property="quirkButton" destination="VFb-wp-d0z" id="Wes-zO-OMD"/>
-                        <outlet property="zapButton" destination="U51-Wy-TqQ" id="jcX-CY-tSj"/>
+                        <outlet property="munchButton" destination="HOI-00-QWd" id="zib-VA-ecL"/>
+                        <outlet property="quirkButton" destination="VFb-wp-d0z" id="Ng8-b8-tzJ"/>
+                        <outlet property="zapButton" destination="U51-Wy-TqQ" id="fWJ-eL-xbA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFW-Nd-Df7" userLabel="First Responder" sceneMemberID="firstResponder"/>

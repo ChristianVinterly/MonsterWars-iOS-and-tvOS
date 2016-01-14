@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqa-pW-MdN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqa-pW-MdN" customClass="FocusButton" customModule="MonsterWars" customModuleProvider="target">
                                 <rect key="frame" x="80" y="520" width="120" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -34,10 +34,10 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="quirkButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="JFw-aA-WV9"/>
+                                    <action selector="quirkButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="NKh-gH-Yfk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9v-bb-97k">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9v-bb-97k" customClass="FocusButton" customModule="MonsterWars" customModuleProvider="target">
                                 <rect key="frame" x="240" y="520" width="120" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -54,10 +54,10 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="zapButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Hc3-bB-Dsi"/>
+                                    <action selector="zapButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="RdP-hn-abc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfS-rW-nnk">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfS-rW-nnk" customClass="FocusButton" customModule="MonsterWars" customModuleProvider="target">
                                 <rect key="frame" x="400" y="520" width="120" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -68,7 +68,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="munchButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="1J6-AC-QKk"/>
+                                    <action selector="munchButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="lrd-ls-r2m"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -87,9 +87,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="munchButton" destination="CfS-rW-nnk" id="QgE-xA-0Hh"/>
-                        <outlet property="quirkButton" destination="Bqa-pW-MdN" id="S2u-2O-L6t"/>
-                        <outlet property="zapButton" destination="e9v-bb-97k" id="D8z-i7-rlF"/>
+                        <outlet property="munchButton" destination="CfS-rW-nnk" id="iLH-TQ-SvP"/>
+                        <outlet property="quirkButton" destination="Bqa-pW-MdN" id="m0D-Pe-X9h"/>
+                        <outlet property="zapButton" destination="e9v-bb-97k" id="OL7-Cz-xwb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>

@@ -13,11 +13,6 @@ class GameScene: SKScene {
 
   // Constants
   let margin = CGFloat(30)
- 
-  // Buttons
-  var quirkButton: ButtonNode!
-  var zapButton: ButtonNode!
-  var munchButton: ButtonNode!
 
   // Labels
 //  let stateLabel = SKLabelNode(fontNamed: "Courier-Bold")
